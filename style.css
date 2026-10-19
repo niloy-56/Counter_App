@@ -582,3 +582,19 @@ body {
 .counter-screens .screen-box p:last-child {
   font-size: 12px;
 }
+
+
+.counter-screens {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 12px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.counter-screens > .screen-box {
+  flex: 1 1 0;
+  width: 50%;
+  min-width: 0;
+  box-sizing: border-box;
+}
