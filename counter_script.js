@@ -1,8 +1,5 @@
-
 let count = 0;
 let count2 = 0;
-
-const LIMIT = 108;
 
 function update_count() {
   document.getElementById("count").textContent = count;
@@ -12,7 +9,7 @@ function update_count() {
 function increment() {
   count++;
 
-  if (count >= LIMIT) {
+  if (count === 108) {
     count = 0;
     count2++;
   }
@@ -25,7 +22,7 @@ function Decrement() {
     count--;
   } else if (count2 > 0) {
     count2--;
-    count = LIMIT - 1;
+    count = 107;
   }
 
   update_count();
@@ -34,30 +31,22 @@ function Decrement() {
 function Reset() {
   count = 0;
   count2 = 0;
-
   update_count();
 }
 
 function Save() {
   localStorage.setItem("count", count);
   localStorage.setItem("count2", count2);
-
-  alert("Both counters saved successfully!");
 }
 
 function Load_from_save() {
-  let savedCount = localStorage.getItem("count");
-  let savedCount2 = localStorage.getItem("count2");
+  const savedCount = localStorage.getItem("count");
+  const savedCount2 = localStorage.getItem("count2");
 
-  if (savedCount !== null) {
-    count = Number(savedCount);
-  }
-
-  if (savedCount2 !== null) {
-    count2 = Number(savedCount2);
-  }
+  if (savedCount !== null) count = Number(savedCount);
+  if (savedCount2 !== null) count2 = Number(savedCount2);
 
   update_count();
 }
 
-update_count();
+Load_from_save();
