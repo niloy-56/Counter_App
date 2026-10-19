@@ -598,3 +598,17 @@ body {
   min-width: 0;
   box-sizing: border-box;
 }
+
+.counter-screens {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 12px;
+  width: 100%;
+}
+
+.counter-screens .screen-box {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
