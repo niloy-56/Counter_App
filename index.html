@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,29 +16,36 @@
 
       <header class="heading">
         <span class="tag">Counter App</span>
-        
         <p><br>Count it. Save it. Load it.</p>
       </header>
-      
+
       <div class="help-link">
         <a href="./help.html" class="help-btn">
-          <span>ⓘ</span> Help & Guide
+          <span>ⓘ</span> Help &amp; Guide
         </a>
       </div>
 
-
+      <!-- First Counter -->
       <div class="screen-box">
         <p class="screen-label">CURRENT COUNT</p>
         <div id="count" class="screen">0</div>
+        <p>Counts from 0 to 107</p>
+      </div>
+
+      <!-- Second Counter -->
+      <div class="screen-box">
+        <p class="screen-label">COMPLETED SETS</p>
+        <div id="count2" class="screen">0</div>
+        <p>+1 for every 108 counts</p>
       </div>
 
       <div class="controls">
         <button class="btn increment" onclick="increment()">
-          Increment(+)
+          Increment (+)
         </button>
 
         <button class="btn decrement" onclick="Decrement()">
-          Decrement(-)
+          Decrement (-)
         </button>
       </div>
 
