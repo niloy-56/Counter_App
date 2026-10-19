@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <section class="box">
+
+      <header class="heading">
+        <span class="tag">Counter App</span>
+        
+        <p><br>Count it. Save it. Load it.</p>
+      </header>
+      
+      <div class="help-link">
+        <a href="./help.html" class="help-btn">
+          <span>ⓘ</span> Help & Guide
+        </a>
+      </div>
+
+
+      <div class="screen-box">
+        <p class="screen-label">CURRENT COUNT</p>
+        <div id="count" class="screen">0</div>
+      </div>
+
+      <div class="controls">
+        <button class="btn increment" onclick="increment()">
+          Increment(+)
+        </button>
+
+        <button class="btn decrement" onclick="Decrement()">
+          Decrement(-)
+        </button>
+      </div>
+
+      <div class="utility-box">
+        <button class="btn reset" onclick="Reset()">
+          Reset
+        </button>
+
+        <button class="btn save" onclick="Save()">
+          Save
+        </button>
+
+        <button class="btn load" onclick="Load_from_save()">
+          Load
+        </button>
+      </div>
+
+      <p class="footer-text">
+        Your count, your control.
+      </p>
+
+    </section>
+  </main>
+
+  <script src="counter_script.js"></script>
+</body>
+
+</html>
