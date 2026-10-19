@@ -556,3 +556,29 @@ body {
     font-size: 27px;
   }
 }
+
+
+/* Two counters side by side */
+.counter-screens {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.counter-screens .screen-box {
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.counter-screens .screen-label {
+  font-size: 12px;
+}
+
+.counter-screens .screen {
+  font-size: clamp(24px, 4vw, 40px);
+}
+
+.counter-screens .screen-box p:last-child {
+  font-size: 12px;
+}
